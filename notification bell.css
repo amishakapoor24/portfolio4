@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notification-menu {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.notification-menu h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.notification-menu .option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notification-menu .option:hover {
+    background-color: #f0f0f0;
+}
+
+.notification-menu .option .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.notification-menu .option .text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Font Awesome for icons */
+.fa {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.fa-location-dot::before {
+    content: "\f3c5";
+}
+
+.fa-bell::before {
+    content: "\f0f3";
+}
+
+.fa-cog::before {
+    content: "\f013";
+}
+
+.fa-info-circle::before {
+    content: "\f05a";
+}

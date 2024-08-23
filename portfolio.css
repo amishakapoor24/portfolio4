@@ -1,0 +1,183 @@
+/* General Styling */
+body {
+   background-image: url("background.gif");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+   border:5px solid darkblue;
+    color: #161616;
+    margin:80px;
+    padding:50px;
+}
+
+
+/* .profile-photo{
+    width: 300px;
+    height: 300px;
+    
+   padding:5px;
+    margin:auto;
+   
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+} */
+.profile-photo h1{
+    color:rgb(8, 8, 8);
+    text-align:right;
+    padding-top: 10%;
+    font-size: 500%;
+    font-style: italic ;
+}
+
+/* Navigation Bar */
+.header-nav {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #201f5c;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.header-nav ul li a:hover {
+    background-color: #f8f3f3f8;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.section {
+    padding:auto;
+    max-width: auto;
+    margin: auto;
+  
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    
+    color: #333;
+    font-weight: 400;
+}
+
+.section p,
+.section ul {
+    font-size: 35px;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 400;
+}
+
+
+
+.section input[type="file"] {
+    display: block;
+    margin-top: 10px;
+}
+.certificate{
+    width:700px;
+    height:700px;
+}
+.main{
+    background-image:url(sky.jpeg);
+    background-repeat:no-repeat;
+ background-position:fixed;
+    background-size: cover;
+    margin:70px;
+}
+section{
+    padding:70px;
+}
+.section{
+    font-size: 45px;
+    font-weight: 400;
+}
+#corner gif{
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 200;
+    z-index: 700;
+    
+}
+.header-content h1{
+    text-align:left;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 300%;
+    font-style: italic;
+}
+.header-content{
+    text-align: right;
+    font-weight: 400;
+    font-size: 35px;
+    display:flex;
+    justify-content:space-between;
+    border:1px solid #ccc;
+    padding:5px;
+    align-items:center;
+    }
+.profile-photo{
+        /* width: 300px;
+        height: 300px;  
+       padding:5px;
+        margin:auto;
+       text-align: left;
+        justify-content: space-between;
+        display:flex;
+        align-items: center; */ 
+    font-size: 20px;
+    font-weight: 400;
+   
+    display:flex;
+    justify-content:space-between;
+    border:1px solid #ccc;
+    padding:5px;
+    align-items:flex-start;
+    }
+.photo{
+    height: 500px;
+    width: 500px;
+}
+@keyframes mandyMichaelAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .mandy-michael-text {
+    font-size: 2em; /* Adjust the size as needed */
+    font-weight: bold;
+    background: linear-gradient(270deg, #ff7a18, #af002d, #319197);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: mandyMichaelAnimation 8s ease infinite;
+  }
+  
