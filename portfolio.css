@@ -1,34 +1,32 @@
-/* General Styling */
-
+/* General Styles */
 body {
-   background-image: url("images/background.gif");
+    background-image: url("images/background.gif");
     font-family: Arial, sans-serif;
     margin: 0;
-    padding:0;
-   border:5px solid darkblue;
+    padding: 0;
+    border: 5px solid darkblue;
     color: #161616;
-    margin:80px;
-    padding:50px;
 }
 
-
-/* .profile-photo{
-    width: 300px;
-    height: 300px;
-    
-   padding:5px;
-    margin:auto;
-   
+/* Profile Photo Styling */
+.profile-photo {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
     justify-content: space-between;
-    display:flex;
-    align-items: center;
-} */
-.profile-photo h1{
-    color:rgb(8, 8, 8);
-    text-align:right;
+    border: 1px solid #ccc;
+    padding: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+/* Profile Photo Header */
+.profile-photo h1 {
+    color: rgb(8, 8, 8);
+    text-align: right;
     padding-top: 10%;
-    font-size: 500%;
-    font-style: italic ;
+    font-size: 2.5em; /* Responsive font size */
+    font-style: italic;
 }
 
 /* Navigation Bar */
@@ -38,6 +36,7 @@ body {
     background-color: #201f5c;
     top: 0;
     z-index: 1000;
+    position: sticky; /* Keeps the nav at the top on scroll */
 }
 
 .header-nav ul {
@@ -47,132 +46,93 @@ body {
 }
 
 .header-nav ul li {
-    display: inline;
-    margin-right: 30px;
+    display: inline-block; /* Allows items to wrap on smaller screens */
+    margin-right: 15px; /* Reduced margin for better spacing on smaller screens */
 }
 
 .header-nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 1.5em; /* Responsive font size */
     font-weight: 400;
     padding: 8px 15px;
     transition: background-color 0.3s;
 }
 
 .header-nav ul li a:hover {
-    background-color: #f8f3f3f8;
+    background-color: #f8f3f3;
     border-radius: 5px;
 }
 
 /* Section Styling */
 .section {
-    padding:auto;
-    max-width: auto;
-    margin: auto;
-  
+    padding: 20px;
+    max-width: 100%;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
-    
     color: #333;
     font-weight: 400;
+    font-size: 2em; /* Responsive font size */
 }
 
 .section p,
 .section ul {
-    font-size: 35px;
+    font-size: 1.2em; /* Responsive font size */
     line-height: 1.6;
     color: #555;
     font-weight: 400;
 }
 
-
-
-.section input[type="file"] {
-    display: block;
-    margin-top: 10px;
+/* Responsive Image Styling */
+.photo {
+    width: 100%; /* Image will take full width of the container */
+    max-width: 500px; /* Prevents image from becoming too large */
+    height: auto; /* Maintains aspect ratio */
 }
-.certificate{
-    width:700px;
-    height:700px;
+
+/* Certificate Image Styling */
+.certificate {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
 }
-.main{
-    background-image:url(images/sky.jpeg);
-    background-repeat:no-repeat;
- background-position:fixed;
+
+/* Main Background Section */
+.main {
+    background-image: url(images/sky.jpeg);
+    background-repeat: no-repeat;
+    background-position: center; /* Changed from fixed to center for better responsiveness */
     background-size: cover;
-    margin:70px;
+    margin: 20px;
 }
-section{
-    padding:70px;
-}
-.section{
-    font-size: 45px;
-    font-weight: 400;
-}
-#corner gif{
-    position: fixed;
-    top: 0;
-    right:0;
-    width: 200;
-    z-index: 700;
-    
-}
-.header-content h1{
-    text-align:left;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    font-size: 300%;
-    font-style: italic;
-}
-.header-content{
+
+/* Header Content Styling */
+.header-content {
     text-align: right;
     font-weight: 400;
-    font-size: 35px;
-    display:flex;
-    justify-content:space-between;
-    border:1px solid #ccc;
-    padding:5px;
-    align-items:center;
-    }
-.profile-photo{
-        /* width: 300px;
-        height: 300px;  
-       padding:5px;
-        margin:auto;
-       text-align: left;
-        justify-content: space-between;
-        display:flex;
-        align-items: center; */ 
-    font-size: 20px;
-    font-weight: 400;
-   
-    display:flex;
-    justify-content:space-between;
-    border:1px solid #ccc;
-    padding:5px;
-    align-items:flex-start;
-    }
-.photo{
-    height: 500px;
-    width: 500px;
+    font-size: 1.5em; /* Responsive font size */
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
 }
-@keyframes mandyMichaelAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .mandy-michael-text {
+
+.header-content h1 {
+    text-align: left;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 2.5em; /* Responsive font size */
+    font-style: italic;
+}
+
+/* Animated Text */
+.mandy-michael-text {
     font-size: 2em; /* Adjust the size as needed */
     font-weight: bold;
     background: linear-gradient(270deg, #ff7a18, #af002d, #319197);
@@ -180,7 +140,70 @@ section{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: mandyMichaelAnimation 8s ease infinite;
-  }
+}
 
-   
-  
+/* Responsive Keyframe Animation */
+@keyframes mandyMichaelAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .header-nav ul li {
+        display: block; /* Stacks nav items vertically on smaller screens */
+        margin-bottom: 10px; /* Adds space between stacked nav items */
+    }
+
+    .header-nav ul li a {
+        font-size: 1.2em; /* Smaller font size for nav links */
+    }
+
+    .profile-photo h1 {
+        font-size: 2em; /* Smaller font size for profile header */
+    }
+
+    .header-content {
+        flex-direction: column; /* Stacks content vertically on smaller screens */
+        text-align: center; /* Centers text on smaller screens */
+    }
+
+    .header-content h1 {
+        font-size: 2em; /* Smaller font size for header */
+    }
+
+    .section {
+        font-size: 1em; /* Smaller font size for section content */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-nav ul li a {
+        font-size: 1em; /* Even smaller font size for nav links */
+        padding: 5px 10px; /* Smaller padding for nav links */
+    }
+
+    .profile-photo {
+        flex-direction: column; /* Stacks profile photo content on smaller screens */
+        align-items: center; /* Centers profile photo content */
+    }
+
+    .profile-photo h1 {
+        font-size: 1.8em; /* Even smaller font size for profile header */
+        text-align: center; /* Centers text on smaller screens */
+        padding-top: 0;
+    }
+
+    .section {
+        font-size: 0.9em; /* Smaller font size for section content */
+        padding: 10px;
+    }
+}
