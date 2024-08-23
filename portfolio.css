@@ -36,7 +36,7 @@ body {
     background-color: #201f5c;
     top: 0;
     z-index: 1000;
-    position: sticky; /* Keeps the nav at the top on scroll */
+     /* Keeps the nav at the top on scroll */
 }
 
 .header-nav ul {
