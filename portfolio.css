@@ -17,7 +17,7 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    /* Allows content to wrap on smaller screens */
 }
 
 /* Profile Photo Header */
