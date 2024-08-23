@@ -1,4 +1,11 @@
 /* General Styling */
+@media only screen and (max-width:600px){
+   body{
+      width:100%;
+         padding:10px;
+   }
+   .navbar{
+      flex-direction:column;
 body {
    background-image: url("images/background.gif");
     font-family: Arial, sans-serif;
@@ -180,4 +187,6 @@ section{
     -webkit-text-fill-color: transparent;
     animation: mandyMichaelAnimation 8s ease infinite;
   }
+
+   
   
