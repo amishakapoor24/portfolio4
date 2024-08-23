@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-   background-image: url("background.gif");
+   background-image: url("images/background.gif");
     font-family: Arial, sans-serif;
     margin: 0;
     padding:0;
@@ -99,7 +99,7 @@ body {
     height:700px;
 }
 .main{
-    background-image:url(sky.jpeg);
+    background-image:url(images/sky.jpeg);
     background-repeat:no-repeat;
  background-position:fixed;
     background-size: cover;
